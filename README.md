@@ -2,7 +2,7 @@
 
 [<img alt="github" src="https://img.shields.io/badge/github-jammymalina/chunk--it-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/jammymalina/chunk-it)
 [<img alt="npmjs.com" src="https://img.shields.io/npm/v/@array-utils/chunk-it?logo=npm&style=flat-square&color=fc8d62&logo=npm" height="20">](https://www.npmjs.com/package/@array-utils/chunk-it)
-[<img alt="build status" src="https://img.shields.io/github/jammymalina/chunk-it/workflows/CI/master?style=for-the-badge" height="20">](https://github.com/jammymalina/chunk-it/actions?query=branch%3Amaster)
+[<img alt="build status" src="https://img.shields.io/github/workflow/status/jammymalina/chunk-it/CI?style=for-the-badge" height="20">](https://github.com/jammymalina/chunk-it/actions?query=branch%3Amaster)
 
 Split any array into chunks.
 
