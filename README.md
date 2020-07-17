@@ -1,5 +1,9 @@
 # chunk-it
 
+[<img alt="github" src="https://img.shields.io/badge/github-jammymalina/chunk--it-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/jammymalina/chunk-it)
+[<img alt="npmjs.com" src="https://img.shields.io/npm/v/@array-utils/chunk-it?logo=npm&style=flat-square&color=fc8d62&logo=npm" height="20">](https://www.npmjs.com/package/@array-utils/chunk-it)
+[<img alt="build status" src="https://img.shields.io/github/jammymalina/chunk-it/workflows/CI/master?style=for-the-badge" height="20">](https://github.com/jammymalina/chunk-it/actions?query=branch%3Amaster)
+
 Split any array into chunks.
 
 ## Usage
@@ -7,7 +11,7 @@ Split any array into chunks.
 ### Constructor
 
 ```javascript
-import { chunkIt } fror 'chunk-it';
+import { chunkIt } from "@array-utils/chunk-it";
 
 // Create "chunker"
 const chunker = chunkIt([1, 2, 3, 4, 5, 6]);
@@ -19,7 +23,7 @@ const chunks = chunker.bySize(2);
 Splits array into `n` number of chunks
 
 ```javascript
-import { chunkIt } fror 'chunk-it';
+import { chunkIt } from "@array-utils/chunk-it";
 
 // splits array into 5 chunks, array has fewer than 5 elements, strict set to false
 const arr1 = [10, 20, 30];
@@ -48,7 +52,7 @@ const result4 = chunkIt(arr4).byCount(3, true);
 Splits array into chunks of length / size `n`
 
 ```javascript
-import { chunkIt } fror 'chunk-it';
+import { chunkIt } from "@array-utils/chunk-it";
 
 // splits array into chunks with max length / size of 3
 const arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];

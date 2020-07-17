@@ -1,6 +1,6 @@
 {
-  "name": "chunk-it",
-  "version": "1.0.0",
+  "name": "@array-utils/chunk-it",
+  "version": "1.0.1",
   "description": "Split any array into chunks",
   "main": "dist/index.js",
   "scripts": {
