@@ -4,7 +4,7 @@ Split any array into chunks.
 
 ## Usage
 
-### constructor
+### Constructor
 
 ```javascript
 import { chunkIt } fror 'chunk-it';
