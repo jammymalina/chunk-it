@@ -1,6 +1,6 @@
 export interface ChunkIt {
-  byCount(count: number, strict?: boolean): any[];
-  bySize(size: number): any[];
+  count(count: number, strict?: boolean): any[];
+  size(size: number): any[];
 }
 
 const validatePositiveNumber = (val: number, methodName: string): void => {
@@ -14,8 +14,8 @@ export const chunkIt = (arr: any[]): ChunkIt => {
     throw new TypeError("ChunkIt doesn't support splitting non-array objects");
   }
 
-  const bySize = (size: number): any => {
-    validatePositiveNumber(size, "bySize");
+  const size = (size: number): any => {
+    validatePositiveNumber(size, "size");
     const chunkSize = Math.floor(size);
     const result = [];
     for (let i = 0; i < arr.length; i += chunkSize) {
@@ -24,8 +24,8 @@ export const chunkIt = (arr: any[]): ChunkIt => {
     return result;
   };
 
-  const byCount = (count: number, strict = false): any => {
-    validatePositiveNumber(count, "byCount");
+  const count = (count: number, strict = false): any => {
+    validatePositiveNumber(count, "count");
     const chunkCount = Math.floor(count);
     const chunkSize = Math.floor(arr.length / chunkCount);
     if (chunkSize === 0) {
@@ -49,7 +49,7 @@ export const chunkIt = (arr: any[]): ChunkIt => {
   };
 
   return {
-    bySize,
-    byCount,
+    size,
+    count,
   };
 };
