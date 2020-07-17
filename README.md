@@ -19,13 +19,12 @@ import { chunkIt } from "@array-utils/chunk-it";
 
 // Creates "chunker"
 const chunker = chunkIt([1, 2, 3, 4, 5, 6]);
-const chunks = chunker.bySize(2);
 
 // Throws an error if arr is not an array
 chunkIt("boooooooooom");
 ```
 
-### byCount(n, strict = false)
+### count(n, strict = false)
 
 Splits an array into _n_ number of chunks. If _strict_ is set to true, the function will throw an error if there are fewer than _n_ elements in the array.
 
@@ -34,15 +33,15 @@ import { chunkIt } from "@array-utils/chunk-it";
 
 // Splits an array into 5 chunks, array has fewer than 5 elements, default strict => false
 const arr1 = [10, 20, 30];
-const result1 = chunkIt(arr).byCount(5); // [[10], [20], [30], [], []]
+const result1 = chunkIt(arr).count(5); // [[10], [20], [30], [], []]
 
 // Throws an error, array has fewer than 5 elements, strict set to true
 const arr2 = [10, 20, 30];
-chunkIt(arr2).byCount(5, true); // throws Error
+chunkIt(arr2).count(5, true); // throws Error
 
 // Splits an array into 3 chunks, exactly 3 elements in the array, strict set to true
 const arr3 = [10, 20, 30];
-const result3 = chunkIt(arr3).byCount(3); // [[10], [20], [30]]
+const result3 = chunkIt(arr3).count(3); // [[10], [20], [30]]
 
 // Splits an array into 3 chunks
 const arr4 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
@@ -51,10 +50,10 @@ const arr4 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
     [50, 60, 70, 80],
     [90, 100, 110],
 ] */
-const result4 = chunkIt(arr4).byCount(3, true);
+const result4 = chunkIt(arr4).count(3, true);
 ```
 
-### bySize(n)
+### size(n)
 
 Splits an array into chunks of length / size _n_
 
@@ -63,5 +62,5 @@ import { chunkIt } from "@array-utils/chunk-it";
 
 // Splits an array into chunks with max length / size of 3
 const arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-const result1 = chunkIt(arr).bySize(3); // [[10, 20, 30], [40, 50, 60], [70, 80, 90], [100]]
+const result1 = chunkIt(arr).size(3); // [[10, 20, 30], [40, 50, 60], [70, 80, 90], [100]]
 ```
