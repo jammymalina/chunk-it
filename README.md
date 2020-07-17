@@ -8,7 +8,9 @@ Split any array into chunks.
 
 ## Usage
 
-### Constructor
+### chunkIt(arr)
+
+Constructor
 
 ```javascript
 import { chunkIt } from "@array-utils/chunk-it";
@@ -18,9 +20,9 @@ const chunker = chunkIt([1, 2, 3, 4, 5, 6]);
 const chunks = chunker.bySize(2);
 ```
 
-### byCount
+### byCount()
 
-Splits array into `n` number of chunks
+Splits array into _n_ number of chunks. If _strict_ is set to true, the function will throw an error if there are fewer than _n_ elements in the array.
 
 ```javascript
 import { chunkIt } from "@array-utils/chunk-it";
