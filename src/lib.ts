@@ -4,7 +4,7 @@ export interface ChunkIt {
 }
 
 const validatePositiveNumber = (val: number, methodName: string): void => {
-  if (isNaN(val) || typeof val !== "number" || Math.floor(val) <= 0) {
+  if (isNaN(val) || typeof val !== "number" || val < 1) {
     throw new TypeError(`ChunkIt ${methodName} accepts only numbers >= 1`);
   }
 };

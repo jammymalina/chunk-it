@@ -24,7 +24,7 @@ const chunker = chunkIt([1, 2, 3, 4, 5, 6]);
 chunkIt("boooooooooom");
 ```
 
-### count(n, strict = false)
+### chunkIt.count(n, strict = false)
 
 Splits an array into _n_ number of chunks. If _strict_ is set to true, the function will throw an error if there are fewer than _n_ elements in the array.
 
@@ -53,7 +53,7 @@ const arr4 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
 const result4 = chunkIt(arr4).count(3, true);
 ```
 
-### size(n)
+### chunkIt.size(n)
 
 Splits an array into chunks of length / size _n_
 
