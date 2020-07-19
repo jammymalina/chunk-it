@@ -64,12 +64,12 @@ describe("chunkIt", () => {
 
     it("should NOT split empty array into 3 chunks, strict set to true", () => {
       const arr = [] as any[];
-      expect(chunkIt(arr).count.bind(null, 3, true)).to.throw("Unable to split array into 3 chunks");
+      expect(chunkIt(arr).count.bind(null, 3, true)).to.throw("Unable to split the array into 3 chunks");
     });
 
     it("should NOT split array into 5 chunks, array has fewer than 5 elements, strict set to true", () => {
       const arr = [10, 20, 30];
-      expect(chunkIt(arr).count.bind(null, 5, true)).to.throw("Unable to split array into 5 chunks");
+      expect(chunkIt(arr).count.bind(null, 5, true)).to.throw("Unable to split the array into 5 chunks");
     });
 
     it("should throw TypeError, non-number argument", () => {

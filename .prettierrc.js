@@ -5,5 +5,5 @@ module.exports = {
   tabWidth: 2,
   useTabs: false,
   semi: true,
-  quoteProps: "as-needed"
+  quoteProps: "as-needed",
 };
