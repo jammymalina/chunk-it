@@ -1,4 +1,4 @@
-# chunk-it
+# @array-utils/chunk-it
 
 [<img alt="github" src="https://img.shields.io/badge/github-jammymalina/chunk--it-8da0cb?style=for-the-badge&labelColor=555555&logo=github">](https://github.com/jammymalina/chunk-it)
 [<img alt="npmjs.com" src="https://img.shields.io/npm/v/@array-utils/chunk-it?logo=npm&style=for-the-badge&color=fc8d62&logo=npm">](https://www.npmjs.com/package/@array-utils/chunk-it)

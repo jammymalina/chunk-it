@@ -30,20 +30,18 @@ export const chunkIt = (arr: any[]): ChunkIt => {
       const chunkSize = Math.floor(arr.length / chunkCount);
       if (chunkSize === 0) {
         if (strict) {
-          throw new Error(`Unable to split array into ${chunkCount} chunks`);
+          throw new Error(`Unable to split the array into ${chunkCount} chunks`);
         }
         return arr.map((item) => [item]).concat(new Array(chunkCount - arr.length).fill([]));
       }
-      const chunkSizes: number[] = new Array(chunkCount).fill(chunkSize);
-      const leftoverItemCount = arr.length - chunkSize * chunkCount;
-      for (let i = 0; i < leftoverItemCount; i += 1) {
-        chunkSizes[i] += 1;
-      }
+      let leftoverItemCount = arr.length - chunkSize * chunkCount;
       const result = [];
       let offset = 0;
-      for (let i = 0; i < chunkSizes.length; i += 1) {
-        result.push(arr.slice(offset, offset + chunkSizes[i]));
-        offset += chunkSizes[i];
+      while (offset < arr.length) {
+        const currentChunkSize = leftoverItemCount > 0 ? chunkSize + 1 : chunkSize;
+        result.push(arr.slice(offset, offset + currentChunkSize));
+        offset += currentChunkSize;
+        --leftoverItemCount;
       }
       return result;
     },
