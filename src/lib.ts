@@ -43,7 +43,6 @@ export const chunkIt = (arr: any[]): ChunkIt => {
         offset += currentChunkSize;
         --leftoverItemCount;
       }
-      for (let i = 0; i < arr.length; i += 1) {}
       return result;
     },
   };
