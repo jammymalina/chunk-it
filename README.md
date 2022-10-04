@@ -4,7 +4,6 @@
 [<img alt="npmjs.com" src="https://img.shields.io/npm/v/@array-utils/chunk-it?logo=npm&style=for-the-badge&color=fc8d62&logo=npm">](https://www.npmjs.com/package/@array-utils/chunk-it)
 [<img alt="build status" src="https://img.shields.io/github/workflow/status/jammymalina/chunk-it/CI?style=for-the-badge">](https://github.com/jammymalina/chunk-it/actions?query=branch%3Amaster)
 [<img alt="sonar status" src="https://img.shields.io/sonar/quality_gate/jammymalina_chunk-it?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge">](https://sonarcloud.io/dashboard?id=jammymalina_chunk-it)
-<img alt="types" src="https://shields-staging.herokuapp.com/npm/types/typescript?logo=typescript&style=for-the-badge">
 
 Split any array into chunks.
 
